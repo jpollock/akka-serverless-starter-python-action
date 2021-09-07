@@ -10,5 +10,4 @@ action = Action(_MYACTIONSERVICE, [API_DESCRIPTOR])
 
 @action.unary_handler("Hello")
 def hello(command: MyRequest, context: ActionContext):
-    resp = MyResponse(text= "Do you want to play a game, " + command.name + "?")
-    return resp
+    return MyResponse(text= "Do you want to play a game, " + command.name + "?")

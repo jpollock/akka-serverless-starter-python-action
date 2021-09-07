@@ -1,8 +1,6 @@
 // This is the public API offered by your entity.
 syntax = "proto3";
 
-import "google/protobuf/empty.proto";
-import "akkaserverless/annotations.proto";
 import "google/api/annotations.proto";
 
 package com.example;
