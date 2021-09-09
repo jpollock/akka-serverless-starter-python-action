@@ -24,9 +24,9 @@ It is recommended that you use a [virtual environment](https://docs.python.org/3
 ## Develop and Run Locally
 
 1. Define domain schema and API specification in `proto` files.
-2. Write business logic in Python files, e.g. `thing_action.py` and `thing_eventsourced_entit.py`.
-3. From terminal, `./bin/run.sh`. This will compile the `proto` files and start the service.
-4. From another terminal, `docker-compose up` to start the proxy service.
+2. Write business logic in Python files, e.g. `api_impl.py`.
+3. From terminal, `start.sh`. This will compile the `proto` files and start the service.
+4. From another terminal, `docker-compose -f docker-compose-proxy.yml up` to start the proxy service.
 
 ### Use Postman to Try and Test
 
